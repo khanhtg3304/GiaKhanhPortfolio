@@ -1,0 +1,166 @@
+@charset "utf-8";
+/* CSS Document */
+*{ scroll-behavior: smooth}
+section{
+	padding: 80px
+	
+}
+
+body{
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 16px;
+	color: black;
+	background-color:white
+	}
+*{ box-sizing: border-box}
+.row{ 
+	display: flex;
+	flex-wrap: wrap
+	}
+.col-1{ width: 8.33%}
+.col-2{ width: 16.66%}
+.col-3{ width: 25%}
+.col-4{ width: 33.33%}
+.col-5{ width: 41.66%}
+.col-6{ width: 50%}
+.col-7{ width: 58.33%}
+.col-8 {width: 66.66%}
+.col-9 {width: 75%}
+.col-10 {width: 83.33%}
+.col-11 {width: 91.66%}
+.col-12 {width: 100%}
+
+[class*="col-"]
+{
+	padding: 15px;
+	/*border: 1px solid red*/ 
+}
+/*day cot doi tuong co do rong cu the vao giua*/
+.mx-auto{ margin-left: auto; margin-right: auto}
+.text-center{ text-align: center}
+
+.container{width:100%}
+.bg-primary{background-color:lightseagreen}
+
+/*--- thu vien grid cho thiet bi tablet ipad--- medium (md)*/
+@media(min-width:600px)
+{
+	.container{width:90%; margin: auto}
+	.col-md-1{ width: 8.33%}
+	.col-md-2{ width: 16.66%}
+	.col-md-3{ width: 25%}/*chia 4*/
+	.col-md-4{ width: 33.33%}/*chia 3*/
+	.col-md-5{ width: 41.66%}
+	.col-md-6{ width: 50%}
+	.col-md-7{ width: 58.33%}
+	.col-md-8 {width: 66.66%}
+	.col-md-9 {width: 75%}
+	.col-md-10 {width: 83.33%}
+	.col-md-11 {width: 91.66%}
+	.col-md-12 {width: 100%}
+}
+/*-- gird cho may pc co do rong tu 1000px tro len (lg)*/
+@media(min-width:1000px)
+{
+	.container{width:80%; margin: auto}
+	.col-lg-1{ width: 8.33%}
+	.col-lg-2{ width: 16.66%}
+	.col-lg-3{ width: 25%}/*chia 4*/
+	.col-lg-4{ width: 33.33%}/*chia 3*/
+	.col-lg-5{ width: 41.66%}
+	.col-lg-6{ width: 50%}
+	.col-lg-7{ width: 58.33%}
+	.col-lg-8 {width: 66.66%}
+	.col-lg-9 {width: 75%}
+	.col-lg-10 {width: 83.33%}
+	.col-lg-11 {width: 91.66%}
+	.col-lg-12 {width: 100%}	
+}
+
+.img-100{width:100%; height:auto}
+.text-center{text-align: center}
+.text-left{text-align: left}
+.text-right{text-align: right}
+.my-50{ margin-top: 50px; margin-bottom: 50px}
+.py-50{ padding-top: 50px; padding-bottom: 50px}
+.mr-8{ margin-right: 0.5rem}
+.ml-8{ margin-left: 0.5rem}
+.ml-16{ margin-left: 1rem}
+.bg-dark{ background-color: #333}
+.text-light{ color: white}
+
+/*------- style cho navigation---------*/
+nav{ 
+	background: white;
+	padding: 10px 0
+}
+nav .container
+{
+	position:relative;
+	/*border: 2px solid red*/
+}
+
+.btn-toggle
+{
+	position: absolute; 
+	right: 0;	
+	font-size: 1.2rem;
+	cursor: pointer;
+	background-color: mediumpurple;
+	border: none;
+	color: white;
+	padding: 3px 10px
+}
+nav .brand
+{ 
+	color:lightseagreen;
+	text-decoration: none;
+	font-size: 1.5rem;
+	padding-left: 5px
+}
+#menu ul
+{
+	margin: 0;
+	padding: 0;
+	list-style: none
+}
+
+
+
+
+@media (min-width:900px)
+{
+	.btn-toggle{ display: none}
+	nav .container
+	{ 
+		display: flex;	
+		align-items: center;
+		justify-content: space-between
+	}
+	#menu ul { display: flex}
+	#menu{ display: block}
+	}
+
+h1{font-size: 40px}
+h2{font-size: 30px}
+
+.box{ padding-top:15px;}
+.box a
+{
+    background-color:darkcyan;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    margin-right: 5px;
+	border-radius: 10px
+}
+.box a:hover{
+    background-color:#5BA68E;
+	border-radius: 10px
+	}
+.radius-10 {
+	border-radius: 10px
+}
+
+
+
